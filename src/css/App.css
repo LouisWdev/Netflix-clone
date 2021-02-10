@@ -1,0 +1,81 @@
+/* Global Var*/
+:root{
+    --main-red: rgba(211, 9, 19);
+    --main-red-red-hover: #e50914;
+    --main-dark: rgba(20,20,20);
+    --main-deep-dark: rgba(0,0,0);
+    --main-grey: rgba(153,153,153);
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica';
+    -webkit-font-smoothing: antialiased;
+    background: var(--main-dark);
+    color: #fff; 
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+/* Header Section */
+.header-container {
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.7)),
+      url(../images/bg.jpg) no-repeat center center/cover;
+}
+
+.header-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 4.375rem 3.125rem 11.875rem #000,
+       inset -4.375rem -3.125rem -11.875rem;
+}
+
+/*****************************************************************************
+                                       Login Page
+*****************************************************************************/
+.main-login-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    background: radial-gradient(rgba(0,0,0,0), rgba(0,0,0,0.5)),
+      url(../images/bg.jpg) no-repeat center center/cover;
+}
+
+@media (max-width: 640px) {
+  .main-login-container {
+       background: #000;
+    }
+}
+
+.main-login-container::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    box-shadow: inset 70px 50px 190px #000,
+       inset -70px 50px 190px;
+}
+
+.header-top {
+    position: relative;
+    height: 10rem;
+    z-index: 1;
+}
